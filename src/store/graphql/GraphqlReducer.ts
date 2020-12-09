@@ -1,33 +1,31 @@
-import * as Actions from './ActionTypes';
-import { Dispatch } from 'redux';
-import { callApi } from '../api/ApiService';
-import { Reducer } from 'react';
-export interface IRepoState {
-    readonly repo: [];
+import { FETCH_PENDING } from './../repo/ActionTypes';
+import * as Actions from './Types';
+export interface IMediaListState {
+    readonly media_list: [];
     readonly loading: boolean;
     readonly error: string;
 }
 
-const initialState: IRepoState = {
-    repo: [],
+const initialState: IMediaListState = {
+    media_list: [],
     loading: false,
     error: "",
 };
-const repo = (state = initialState, action: any) => {
+const mediaList = (state = initialState, action: any) => {
     try {
         switch (action.type) {
-            case Actions.FETCH_PENDING:
+            case Actions.FETCH_MEDIA_LIST_PENDING:
                 return {
                     ...state,
                     loading: true,
                 };
-            case Actions.FETCH_SUCCESS:
+            case Actions.FETCH_MEDIA_LIST_SUCCESS:
                 return {
                     ...state,
                     loading: false,
-                    repo: action.payload
+                    media_list: action.payload
                 };
-            case Actions.FETCH_ERROR:
+            case Actions.FETCH_MEDIA_LIST_ERROR:
                 return {
                     ...state,
                     loading: false,
@@ -45,4 +43,4 @@ const repo = (state = initialState, action: any) => {
     }
 }
 
-export default repo;
+export default mediaList;
