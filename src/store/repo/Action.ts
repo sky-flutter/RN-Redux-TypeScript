@@ -1,22 +1,20 @@
 import { Dispatch } from 'redux';
 import * as Actions from './ActionTypes';
+import { callApi } from '../api/ApiService';
 
 
 export const FetchRepo = () => {
     return (dispatch: Dispatch) => {
         return Promise.resolve(dispatch(FetchRepoPending())).then(() => {
-            return fetch("https://jsonplaceholder.typicode.com/posts")
-                .then((response) => response.json())
-                .then((response) => {
-                    if (response.error) {
-                        return dispatch(FetchRepoError(response.error));
-                    }
-                    return dispatch(FetchRepoSuccess(response));
-                })
-                .catch((error) => {
-                    return dispatch(FetchRepoError(error));
-                });
-        })
+            return callApi("https://jsonplaceholder.typicode.com/posts", null, (response: any) => {
+                if (response.error) {
+                    return dispatch(FetchRepoError(response.error));
+                }
+                return dispatch(FetchRepoSuccess(response));
+            }, (error: any) => {
+                return dispatch(FetchRepoError(error));
+            });
+        });
     }
 }
 export const FetchRepoPending = () => {
