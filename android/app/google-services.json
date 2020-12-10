@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "26127609054",
+    "firebase_url": "https://lubricantscoupons.firebaseio.com",
+    "project_id": "lubricantscoupons",
+    "storage_bucket": "lubricantscoupons.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26127609054:android:44b56e56cbac7e0a03664f",
+        "android_client_info": {
+          "package_name": "com.example.lubricantscoupons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26127609054-u3pr2h8t4289q1tq8ie1junhkjl7qrtc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lubricantscoupons",
+            "certificate_hash": "2c054b0c40a167d8ef08fcb284f762d089e18e08"
+          }
+        },
+        {
+          "client_id": "26127609054-f6qvtqd0o41h6gbdn0er31k8acm5ao16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_G__uE06zl3v-APk_wqOwFmDa-EanJPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26127609054-f6qvtqd0o41h6gbdn0er31k8acm5ao16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26127609054:android:2395418f4acd87bd03664f",
+        "android_client_info": {
+          "package_name": "com.reactredux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26127609054-f6qvtqd0o41h6gbdn0er31k8acm5ao16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_G__uE06zl3v-APk_wqOwFmDa-EanJPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26127609054-f6qvtqd0o41h6gbdn0er31k8acm5ao16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

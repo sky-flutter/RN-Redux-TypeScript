@@ -1,10 +1,10 @@
 import { View, FlatList, StyleSheet } from 'react-native';
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { FetchMediaList } from './Actions';
-import RepoListItem from '../../components/RepoListItem';
-import Loader from '../../components/Loader';
-import Error from '../../components/Error';
+import RepoListItem from '../components/RepoListItem';
+import Loader from '../components/Loader';
+import Error from '../components/Error';
+import { FetchMediaList } from '../store/graphql/Actions';
 const styles = StyleSheet.create({
     mainContainer: {
         flex: 1,
